@@ -114,6 +114,8 @@
 			<div class='menu-row'>
 			<span class='menu-cat'><b>Summarize PDF</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/summarized-pdf-text'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/summarized-pdf-text</a><br/></div>
 			<div class='menu-row'>
+			<span class='menu-cat'><b>Translate PDF</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/translated-pdf-text'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/translated-pdf-text</a><br/></div>
+			<div class='menu-row'>
 			<span class='menu-cat'><b>Query PDF</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/pdf-info'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/pdf-info</a><br/></div>
 			<div class='menu-row'>
 			<span class='menu-cat'><b>Extract Images</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/extracted-images'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/extracted-images</a><br/></div>
@@ -392,6 +394,60 @@
 					<tr class='info'><td>401</td><td>Unauthorized</td><td><pre>{
    "error": "An Api-Key header is required to send this request."<br/>}</pre></td></tr>
 				</table><br/></div><br/><br/>
+				<a name='/translated-pdf-text'></a><div class='section-header'><span class='post'>&nbsp;POST </span> <span class='header'>&nbsp;/translated-pdf-text</span></div><div class='section-content'><br/><span class='summary'>Summary</span><br/><br/> Translate the text content of PDF, Markdown (.md), or plain text (.txt) documents into a specified language using AI. This tool extracts the text, detects the source language(s), translates the content via OpenAI, and returns the translated text. <br/><br/> <a href="https://pdfrest.com/apitools/translate-pdf/" target="_blank" style="display: inline-block; padding: 8px 15px; margin-right: 8px; background-color: #D14081; color: white; text-decoration: none; border-radius: 15px;">Learn More</a> <a href="https://pdfrest.com/apilab/?endpoint=translated-pdf-text&eu=false" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 15px; background-color: #F8CA87; color: #333; text-decoration: none; border-radius: 15px;">Try in API Lab</a> <br><br> <span class='summary'>Examples</span> <div class="tab">
+  <button class="translated-pdf-text-tablinks" onclick="openTab(event, 'cURL', 'translated-pdf-text')" id="translated-pdf-text-defaultOpen">cURL</button>
+  <button class="translated-pdf-text-tablinks" onclick="openTab(event, 'JavaScript', 'translated-pdf-text')">JavaScript</button>
+  <button class="translated-pdf-text-tablinks" onclick="openTab(event, 'Python', 'translated-pdf-text')">Python</button>
+  <button class="translated-pdf-text-tablinks" onclick="openTab(event, 'PHP', 'translated-pdf-text')">PHP</button>
+  <button class="translated-pdf-text-tablinks" onclick="openTab(event, 'DotNET', 'translated-pdf-text')">.NET</button>
+  <button class="translated-pdf-text-tablinks" onclick="openTab(event, 'Java', 'translated-pdf-text')">Java</button>
+</div> <div id="translated-pdf-text-cURL" class="translated-pdf-text-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FcURL%2FEndpoint%20Examples%2FMultipart%20Payload%2Ftranslated-pdf-text.sh&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="translated-pdf-text-JavaScript" class="translated-pdf-text-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJavaScript%2FEndpoint%20Examples%2FMultipart%20Payload%2Ftranslated-pdf-text.js&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="translated-pdf-text-Python" class="translated-pdf-text-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FPython%2FEndpoint%20Examples%2FMultipart%20Payload%2Ftranslated-pdf-text.py&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="translated-pdf-text-PHP" class="translated-pdf-text-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FPHP%2FEndpoint%20Examples%2FMultipart%20Payload%2Ftranslated-pdf-text.php&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="translated-pdf-text-DotNET" class="translated-pdf-text-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FDotNET%2FEndpoint%20Examples%2FMultipart%20Payload%2Ftranslated-pdf-text.cs&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="translated-pdf-text-Java" class="translated-pdf-text-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJava%2FEndpoint%20Examples%2FMultipart%20Payload%2FTranslatedPDFText.java&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <script> document.getElementById("translated-pdf-text-defaultOpen").click(); </script> <br/><span class='summary'>Required Headers</span><br/> <pre>Accept: application/json</pre> <pre>Content-Type: multipart/form-data</pre> <pre>Api-Key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</pre>
+<br/><br/>	<span class='summary'>Path Parameters</span><br/>
+				<table width=100% border=1 cellpadding=10 cellspacing=0 ><tr class='table-title'><td width=12%>Name</td><td width=64%>Description</td><td width=12%>Default</td><td width=12%>Required</td></tr>
+					<tr class='info'><td>file</td><td>File to be uploaded and processed<br/><br/><b>Accepts:</b><br/>Any PDF (.pdf), Markdown (.md), or plain text (.txt) file<br/><br/><b>Example:</b><br/>@PATH_TO_FILE/example_file.pdf</td><td>None</td><td class='partial'>One of:<ul><li>file</li><li>id</li></ul></tr>
+					<tr class='info'><td>id</td><td>Alphanumeric ID (UUID) of existing file on server to be processed<br/><br/><b>Accepts:</b><br/>Any valid resource ID returned by a POST request<br/><br/><b>Example:</b><br/>0950b9bdf-0465-4d3f-8ea3-d2894f1ae839</td><td>None</td><td class='partial'>One of:<ul><li>file</li><li>id</li></ul></tr>
+					<tr class='info'><td>output_language</td><td>Specify the desired output language of the translation. <br> Must be in the format: <code>{2-3 letter ISO code}-{optional subtag}</code>. <br> Optional subtag can be: <ul>
+    <li>a 4 letter script: <code>Latn</code>, <code>Cyrl</code>, <code>Hant</code></li>
+    <li>a 2 letter region: <code>US</code>, <code>BR</code>, <code>CN</code></li>
+    <li>a 3 digit numeric region: <code>419</code> (Latin America)</li>
+</ul>
+<br/><br/><b>Accepts:</b><br/>Any valid ISO 639 language code, optionally with script or region subtag.<br/><br/><b>Example:</b><br/>ja</td><td>None</td><td class='yes'>Yes</tr>
+					<tr class='info'><td>pages</td><td>Page or range of pages of the document to translate. Ignored for .md or .txt files.
+<br/><br/><b>Accepts:</b><br/>Single page number (e.g., 5) or range (e.g., 1-5, 3-last)<br/><br/><b>Example:</b><br/>1-3</td><td>1-last</td><td class='No'>No</tr>
+					<tr class='info'><td>output_format</td><td>Whether the output text should have markdown syntax or not.<br/><br/><b>Accepts:</b><br/><ul><li><b>plaintext</b></li><li><b>markdown</b></li></ul><br/><br/><b>Example:</b><br/>plaintext</td><td>markdown</td><td class='No'>No</tr>
+					<tr class='info'><td>output_type</td><td>What format the output should be returned in (file to download or output included directly in JSON response).<br/><br/><b>Accepts:</b><br/><ul><li><b>json</b></li><li><b>file</b></li></ul><br/><br/><b>Example:</b><br/>file</td><td>json</td><td class='No'>No</tr>
+					<tr class='info'><td>output</td><td>Name of the generated output file (when output_type is set to file), without extension.<br/><br/><b>Accepts:</b><br/>Any valid file name<br/><br/><b>Example:</b><br/>my_translation_output</td><td>[INPUT_FILE_NAME]_pdfrest_translated-pdf-text</td><td class='No'>No</tr>
+				</table><br/><br/>	<span class='summary'>Responses</span><br/>
+				<table width=100% border=1 cellpadding=10 cellspacing=0 ><tr class='table-title'><td width=15%>Response Status Code</td><td width=25%>Description</td><td width=60%>JSON Response Example</td></tr>
+					<tr class='info'><td>200</td><td>OK<br/>(output_type = json)</td><td><pre>{
+   "translated_text": "**睡眠の重要性**\n\n睡眠はしばしば過小評価されるが、健康と幸福を維持する上で重要な役割を果たす。睡眠中、体は組織を修復し、記憶を定着させ、翌日のエネルギーを回復させる。十分な休息がないと、肉体的、精神的なパフォーマンスの両方が低下し、集中力、気分の調整、生産性に困難を招く。\n\nただし現代生活は睡眠を脇に置きがちだ。忙しいスケジュール、深夜の仕事、そして常時アクセス可能なテクノロジーのために、多くの人がより多くのことをこなすことを優先して休息を犠牲にしている。この選択は長期的な問題を引き起こす可能性があり、免疫力の低下、ストレスの増大、そして心臓病のような深刻な健康リスクさえも招く。\n\n睡眠を優先することは、バランスと成功に不可欠だ。一定の睡眠リズムを保つ、就寝前のスクリーンタイムを減らす、快適な環境を整えるなど、良い睡眠習慣を身につけることが大きな違いを生む。睡眠を食事と運動と同じくらい重要視することによって、人々は全体的な生活の質を向上させることができる。"<br/>
+   "source_languages": [ "en" ]<br/>
+   "output_language": "ja"<br/>
+   "inputId": "178131d23-4d6d-4ff3-815f-011a00192fd1"<br/>}</pre></td></tr>
+					<tr class='info'><td>200</td><td>OK<br/>(output_type = file)</td><td><pre>{
+   "outputUrl": "http://localhost:3000/resource/266e4c17a-5d13-487d-a886-f3470530b95c?format=file"<br/>
+   "outputId": "266e4c17a-5d13-487d-a886-f3470530b95c"<br/>
+   "inputId": "1b593f334-5809-4b08-b3f9-252c8f58e71c"<br/>
+   "source_languages": [ "zh", "ru" ]<br/>
+   "output_language": "en"<br/>}</pre></td></tr>
+					<tr class='info'><td>400</td><td>Bad Request</td><td><pre>{
+   "error": "The provided 'output_language' language tag is invalid. Format 'output_language' as a valid 2-3 character ISO 639 language code (e.g., 'en', 'es', 'fra'), optionally with a script, alphabetic region, or numeric region (e.g., 'zh-Hant', 'eng-US', 'es-419'). See documentation for recommended formats.
+"<br/>}</pre></td></tr>
+					<tr class='info'><td>401</td><td>Unauthorized</td><td><pre>{
+   "error": "An Api-Key header is required to send this request."<br/>}</pre></td></tr>
+				</table><br/></div><br/><br/>
 				<a name='/pdf-info'></a><div class='section-header'><span class='post'>&nbsp;POST </span> <span class='header'>&nbsp;/pdf-info</span></div><div class='section-content'><br/><span class='summary'>Summary</span><br/><br/> Return detailed information about a PDF document and its contents to assess the current state of the file and drive conditional processing. <br/><br/> NOTE: Some PDF conditions can prevent all queries from completing.  For example, if the document is password-protected, corrupted, or not actually a PDF, all queries will not be able to be completed. The output response will always include an "allQueriesProcessed" field with a true or false value. When this is false, an additional "warning" field will also be included in the output response with a human-readable string explaining why all queries could not be processed.<br/><br/> <a href="https://pdfrest.com/apitools/query-pdf/" target="_blank" style="display: inline-block; padding: 8px 15px; margin-right: 8px; background-color: #D14081; color: white; text-decoration: none; border-radius: 15px;">Learn More</a> <a href="https://pdfrest.com/apilab/?endpoint=pdf-info&eu=false" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 15px; background-color: #F8CA87; color: #333; text-decoration: none; border-radius: 15px;">Try in API Lab</a> <br><br> <span class='summary'>Examples</span>  <div class="tab">
   <button class="pdf-info-tablinks" onclick="openTab(event, 'cURL', 'pdf-info')" id="pdf-info-defaultOpen">cURL</button>
   <button class="pdf-info-tablinks" onclick="openTab(event, 'JavaScript', 'pdf-info')">JavaScript</button>
@@ -499,6 +555,7 @@
 					<tr class='info'><td>preserve_line_breaks</td><td>When enabled, this feature identifies and maintains the original line breaks within the text, inserting a newline character ("\n") at each break point for full_text output.<br/><br/><b>Accepts:</b><br/><ul><li><b>off</b></li> <li><b>on</b></li></td><td>off</td><td class='No'>No</tr>
 					<tr class='info'><td>word_style</td><td>Adds a JSON-formatted list of each word in the document with style information for each word, including font, size, color, and color-space.<br/><b>NOTE:</b> Turning on word_style and word_coordinates will add both types of metadata to the same word list<br/><br/><b>Accepts:</b><br/><ul><li><b>off</b></li> <li><b>on</b></li></ul></td><td>off</td><td class='No'>No</tr>
 					<tr class='info'><td>word_coordinates</td><td>Adds a JSON-formatted list of each word in the document, including page and coordinates of all 4 corners of each word's bounding box.<br/><b>NOTE:</b> Turning on word_style and word_coordinates will add both types of metadata to the same word list<br/><br/><b>Accepts:</b><br/><ul><li><b>off</b></li> <li><b>on</b></li></ul></td><td>off</td><td class='No'>No</tr>
+					<tr class='info'><td>pages</td><td>Page or range of pages to include<br/><br/><b>Accepts:</b><br/>Any mix of individual pages and/or ranges seperated by commas. "last" can be used to represent the number of the last page of the document.<br/><br/><b>Example:</b><br/><ul><li>14-last</li><li>2-9</li><li>1,2,5-10,12-last</li></ul></td><td>1-last<br/>(all pages)</td><td class='No'>No</tr>
 					<tr class='info'><td>output_type</td><td>Specify whether to save output as a file with .json extension or return output directly in the JSON response<br/><br/><b>Accepts:</b><br/><ul><li><b>json</b></li> <li><b>file</b></li></ul></td><td>json</td><td class='No'>No</tr>
 					<tr class='info'><td>output</td><td>Name of the generated output file (when output_type is set to file), without extension<br/><br/><b>Accepts:</b><br/>Any valid file name<br/><br/><b>Example:</b><br/>example_out</td><td>[INPUT_FILE_NAME]_pdfrest_extracted-text</td><td class='No'>No</tr>
 				</table><br/><br/>	<span class='summary'>Responses</span><br/>
