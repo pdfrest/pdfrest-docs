@@ -56,7 +56,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@nuxtjs/mdc": ">=0.18.0"
+      "@nuxtjs/mdc": "^0.18.0"
     }
   }
 }
