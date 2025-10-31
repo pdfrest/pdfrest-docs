@@ -1,8 +1,8 @@
 <template>
   <div class="mb-6">
-    <div class="flex flex-col lg:flex-row gap-3">
+    <div class="flex flex-col gap-3 lg:flex-row">
       <div v-if="image" class="w-20">
-        <NuxtImg :src="image" class="w-full"/>
+        <NuxtImg :src="image" class="w-full" />
       </div>
       <div>
         <ProseH1>

@@ -68,7 +68,7 @@ const tree = computed(() => {
     const dir = navDirFromPath(leveledPath, navigation.value);
     return dir ?? [];
   }
-  
+
   return navigation.value;
 });
 

@@ -1,7 +1,8 @@
 {
   "name": "pdfrest-docs",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.9.0+sha1.3edbe440f4e570aa8f049adbd06b9483d55cc2d2",
   "description": "Documentation for pdfRest services",
   "homepage": "https://docs.pdfrest.com/",
   "scripts": {
@@ -24,7 +25,7 @@
     "@nuxt/scripts": "^0.10.3",
     "@nuxthq/studio": "2.2.1",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/mdc": "^0.13.5",
+    "@nuxtjs/mdc": "^0.18.0",
     "@nuxtjs/robots": "^5.4.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "class-variance-authority": "^0.7.1",
@@ -53,5 +54,9 @@
     "taze": "^18.5.0",
     "vue-tsc": "^2.2.0"
   },
-  "packageManager": "pnpm@9.9.0+sha1.3edbe440f4e570aa8f049adbd06b9483d55cc2d2"
+  "pnpm": {
+    "overrides": {
+      "@nuxtjs/mdc": "^0.18.0"
+    }
+  }
 }

@@ -28,7 +28,6 @@ import Toaster from '@/components/ui/toast/Toaster.vue';
 
 const { page } = useContent();
 const config = useConfig();
-const route = useRoute();
 const { themeClass, radius } = useThemes();
 
 useSeoMeta({
