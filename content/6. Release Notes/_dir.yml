@@ -1,0 +1,13 @@
+# Dir page
+
+title: Release Notes
+#icon: vscode-icons:file-type-pdf2
+navigation: false
+navigation.redirect: /additional-guides/directory/
+#navBadges:
+#  - value: New
+#    type: lime
+sidebar:
+  style: tree
+collapse: false
+toc: true
