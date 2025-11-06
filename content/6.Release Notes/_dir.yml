@@ -1,7 +1,7 @@
 # Dir page
 
 title: Release Notes
-icon: vscode-icons:default-file
+icon: vscode-icons:file-type-git
 navigation: true
 #navigation.redirect: /release-notes/release-notes/
 #navBadges:
