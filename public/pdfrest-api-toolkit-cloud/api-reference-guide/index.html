@@ -154,6 +154,8 @@
 			<div class='menu-row'>
 			<span class='menu-cat'><b>Split PDF</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/split-pdf'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/split-pdf</a><br/></div>
 			<div class='menu-row'>
+			<span class='menu-cat'><b>Create Blank PDF</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/blank-pdf'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/blank-pdf</a><br/></div>
+			<div class='menu-row'>
 			<span class='menu-cat'><b>Add to PDF</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/pdf-with-added-text'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/pdf-with-added-text</a><br/>&nbsp;&nbsp;&#8226; <a href='#/pdf-with-added-image'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/pdf-with-added-image</a><br/>&nbsp;&nbsp;&#8226; <a href='#/pdf-with-added-attachment'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/pdf-with-added-attachment</a><br/></div>
 			<div class='menu-row'>
 			<span class='menu-cat'><b>PDF to Images</b></span><br/>&nbsp;&nbsp;&#8226; <a href='#/bmp'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/bmp</a><br/>&nbsp;&nbsp;&#8226; <a href='#/jpg'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/jpg</a><br/>&nbsp;&nbsp;&#8226; <a href='#/png'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/png</a><br/>&nbsp;&nbsp;&#8226; <a href='#/gif'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/gif</a><br/>&nbsp;&nbsp;&#8226; <a href='#/tif'><span class='post'>POST </span>&nbsp;&nbsp;<span class='menu-item'>/tif</a><br/></div>
@@ -1367,7 +1369,7 @@
 					<tr class='info'><td>401</td><td>Unauthorized</td><td><pre>{
    "error": "The provided key is not valid."<br/>}</pre></td></tr>
 				</table><br/></div><br/><br/>
-				<a name='/split-pdf'></a><div class='section-header'><span class='post'>&nbsp;POST </span> <span class='header'>&nbsp;/split-pdf</span></div><div class='section-content'><br/><span class='summary'>Summary</span><br/> Splits a single PDF document into one or more PDF documents with specified pages. Any number of PDFs may be split out from the original PDF by including "pages[]" multiple times.  Output files will be returned in the order they are included.<br><br> NOTE: If "pages[]" is not specified, an output file will be created for each page of the input file containing only that page.  A ten page PDF would be split into ten single-page PDFs.<br><br> <a href="https://pdfrest.com/apitools/split-pdf/" target="_blank" style="display: inline-block; padding: 8px 15px; margin-right: 8px; background-color: #D14081; color: white; text-decoration: none; border-radius: 15px;">Learn More</a> <a href="https://pdfrest.com/apilab/?endpoint=split-pdf&eu=false" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 15px; background-color: #F8CA87; color: #333; text-decoration: none; border-radius: 15px;">Try in API Lab</a> <br><br> <span class='summary'>Examples</span> <div class="tab">
+				<a name='/split-pdf'></a><div class='section-header'><span class='post'>&nbsp;POST </span> <span class='header'>&nbsp;/split-pdf</span></div><div class='section-content'><br/><span class='summary'>Summary</span><br/> Splits a single PDF document into one or more PDF documents with specified pages. Any number of PDFs may be split out from the original PDF by including "pages[]" multiple times. Output files will be returned in the order they are included.<br><br> NOTE: If "pages[]" is not specified, an output file will be created for each page of the input file containing only that page. A ten page PDF would be split into ten single-page PDFs.<br><br> <a href="https://pdfrest.com/apitools/split-pdf/" target="_blank" style="display: inline-block; padding: 8px 15px; margin-right: 8px; background-color: #D14081; color: white; text-decoration: none; border-radius: 15px;">Learn More</a> <a href="https://pdfrest.com/apilab/?endpoint=split-pdf&eu=false" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 15px; background-color: #F8CA87; color: #333; text-decoration: none; border-radius: 15px;">Try in API Lab</a> <br><br> <span class='summary'>Examples</span> <div class="tab">
   <button class="split-pdf-tablinks" onclick="openTab(event, 'cURL', 'split-pdf')" id="split-pdf-defaultOpen">cURL</button>
   <button class="split-pdf-tablinks" onclick="openTab(event, 'JavaScript', 'split-pdf')">JavaScript</button>
   <button class="split-pdf-tablinks" onclick="openTab(event, 'Python', 'split-pdf')">Python</button>
@@ -1379,7 +1381,7 @@
   <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FcURL%2FEndpoint%20Examples%2FMultipart%20Payload%2Fsplit-pdf-delete-page.sh&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
   <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FcURL%2FEndpoint%20Examples%2FMultipart%20Payload%2Fsplit-pdf-custom-ranges.sh&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 </div> <div id="split-pdf-JavaScript" class="split-pdf-tabcontent">
-  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJavaScript%2FEndpoint%20Examples%2FMultipart%20Payload%2Fsplit-pdf.js&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script> 
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJavaScript%2FEndpoint%20Examples%2FMultipart%20Payload%2Fsplit-pdf.js&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 </div> <div id="split-pdf-Python" class="split-pdf-tabcontent">
   <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FPython%2FEndpoint%20Examples%2FMultipart%20Payload%2Fsplit-pdf.py&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 </div> <div id="split-pdf-PHP" class="split-pdf-tabcontent">
@@ -1393,8 +1395,8 @@
 				<table width=100% border=1 cellpadding=10 cellspacing=0 ><tr class='table-title'><td width=12%>Name</td><td width=64%>Description</td><td width=12%>Default</td><td width=12%>Required</td></tr>
 					<tr class='info'><td>file</td><td>File to be uploaded and split into new files.<br/><br/><b>Accepts:</b><br/>Any PDF file<br/><br/><b>Example:</b><br/>@PATH_TO_FILE/example_file.pdf</td><td>None</td><td class='partial'>One of:<ul><li>file</li><li>id</li></ul></tr>
 					<tr class='info'><td>id</td><td>Alphanumeric ID (UUID) of existing file on server to be split into new files.<br/><br/><b>Accepts:</b><br/>Any valid resource ID returned by a POST request<br/><br/><b>Example:</b><br/>0950b9bdf-0465-4d3f-8ea3-d2894f1ae839</td><td>None</td><td class='partial'>One of:<ul><li>file</li><li>id</li></ul></tr>
-					<tr class='info'><td>pages[]</td><td>Page or range of pages to include in output file.  This parameter may be specified multiple times to create multiple output files.  If this paramater is not specified, an output file will be created for each page of the input file containing only that page.<br/><br/><b>Accepts:</b><br/>Any mix of individual pages and/or ranges seperated by commas. "last" can be used to represent the number of the last page of the document.  Page order can be reversed using ranges with the higher number specified before the lower number.<br/><br/><b>Example:</b><br/><ul><li>14-last</li><li>2-9</li><li>1,2,10-5,12-last</li><li>even</li><li>odd</li></ul></td><td>None</td><td class='No'>No</tr>
-					<tr class='info'><td>output</td><td>Prefix of the generated output file name(s), without extension.  A sequentially incremented number will be appended to the end of this prefix for each output file name along with a .pdf extension.<br/><br/><b>Accepts:</b><br/>Any valid file name<br/><br/><b>Example:</b><br/>example_out</td><td>[INPUT_FILE_NAME]_pdfrest_split-pdf</td><td class='No'>No</tr>
+					<tr class='info'><td>pages[]</td><td>Page or range of pages to include in output file. This parameter may be specified multiple times to create multiple output files. If this paramater is not specified, an output file will be created for each page of the input file containing only that page.<br/><br/><b>Accepts:</b><br/>Any mix of individual pages and/or ranges seperated by commas. "last" can be used to represent the number of the last page of the document. Page order can be reversed using ranges with the higher number specified before the lower number.<br/><br/><b>Example:</b><br/><ul><li>14-last</li><li>2-9</li><li>1,2,10-5,12-last</li><li>even</li><li>odd</li></ul></td><td>None</td><td class='No'>No</tr>
+					<tr class='info'><td>output</td><td>Prefix of the generated output file name(s), without extension. A sequentially incremented number will be appended to the end of this prefix for each output file name along with a .pdf extension.<br/><br/><b>Accepts:</b><br/>Any valid file name<br/><br/><b>Example:</b><br/>example_out</td><td>[INPUT_FILE_NAME]_pdfrest_split-pdf</td><td class='No'>No</tr>
 				</table><br/><br/>	<span class='summary'>Responses</span><br/>
 				<table width=100% border=1 cellpadding=10 cellspacing=0 ><tr class='table-title'><td width=15%>Response Status Code</td><td width=25%>Description</td><td width=60%>JSON Response Example</td></tr>
 					<tr class='info'><td>200</td><td>OK</td><td><pre>{
@@ -1403,6 +1405,44 @@
    "inputId": "1cb17d88c-7096-4d37-8b38-b97b00f587ac"<br/>}</pre></td></tr>
 					<tr class='info'><td>400</td><td>Bad Request</td><td><pre>{
    "error": "This route will only accept a File or an ID, not both."<br/>}</pre></td></tr>
+					<tr class='info'><td>401</td><td>Unauthorized</td><td><pre>{
+   "error": "The provided key is not valid."<br/>}</pre></td></tr>
+				</table><br/></div><br/><br/>
+				<a name='/blank-pdf'></a><div class='section-header'><span class='post'>&nbsp;POST </span> <span class='header'>&nbsp;/blank-pdf</span></div><div class='section-content'><br/><span class='summary'>Summary</span><br/> Creates a new, blank PDF document with precisely defined page size, page count, and orientation. This tool is the foundational first step for programmatic PDF generation. <br/> <br/><br/> <a href="https://pdfrest.com/apitools/create-blank-pdf/" target="_blank" style="display: inline-block; padding: 8px 15px; margin-right: 8px; background-color: #D14081; color: white; text-decoration: none; border-radius: 15px;">Learn More</a> <a href="https://pdfrest.com/apilab/?endpoint=blank-pdf&eu=false" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 8px 15px; background-color: #F8CA87; color: #333; text-decoration: none; border-radius: 15px;">Try in API Lab</a> <br><br> <span class='summary'>Examples</span> <div class="tab">
+  <button class="blank-pdf-tablinks" onclick="openTab(event, 'cURL', 'blank-pdf')" id="blank-pdf-defaultOpen">cURL</button>
+  <button class="blank-pdf-tablinks" onclick="openTab(event, 'JavaScript', 'blank-pdf')">JavaScript</button>
+  <button class="blank-pdf-tablinks" onclick="openTab(event, 'Python', 'blank-pdf')">Python</button>
+  <button class="blank-pdf-tablinks" onclick="openTab(event, 'PHP', 'blank-pdf')">PHP</button>
+  <button class="blank-pdf-tablinks" onclick="openTab(event, 'DotNET', 'blank-pdf')">.NET</button>
+  <button class="blank-pdf-tablinks" onclick="openTab(event, 'Java', 'blank-pdf')">Java</button>
+</div> <div id="blank-pdf-cURL" class="blank-pdf-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FcURL%2FEndpoint%20Examples%2FMultipart%20Payload%2Fblank-pdf.sh&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="blank-pdf-JavaScript" class="blank-pdf-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJavaScript%2FEndpoint%20Examples%2FMultipart%20Payload%2Fblank-pdf.js&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="blank-pdf-Python" class="blank-pdf-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FPython%2FEndpoint%20Examples%2FMultipart%20Payload%2Fblank-pdf.py&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="blank-pdf-PHP" class="blank-pdf-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FPHP%2FEndpoint%20Examples%2FMultipart%20Payload%2Fblank-pdf.php&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="blank-pdf-DotNET" class="blank-pdf-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FDotNET%2FEndpoint%20Examples%2FMultipart%20Payload%2Fblank-pdf.cs&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <div id="blank-pdf-Java" class="blank-pdf-tabcontent">
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJava%2FEndpoint%20Examples%2FMultipart%20Payload%2FBlankPDF.java&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+</div> <script> document.getElementById("blank-pdf-defaultOpen").click(); </script> <br/><span class='summary'>Required Headers</span><br/> <pre>Accept: application/json</pre> <pre>Content-Type: multipart/form-data</pre> <pre>Api-Key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</pre>
+<br/><br/>	<span class='summary'>Body Parameters</span><br/>
+				<table width=100% border=1 cellpadding=10 cellspacing=0 ><tr class='table-title'><td width=12%>Name</td><td width=64%>Description</td><td width=12%>Default</td><td width=12%>Required</td></tr>
+					<tr class='info'><td>page_size</td><td>Standard or custom size for the pages in the new document.<br/><br/><b>Accepts:</b><br/>Choose from: letter, legal, ledger, A3, A4, A5, custom<br/><br/><b>Example:</b><br/>letter</td><td>None</td><td class='yes'>Yes</tr>
+					<tr class='info'><td>page_count</td><td>Number of pages within the output document (max: 1000).<br/><br/><b>Accepts:</b><br/>Integer between 1 and 1000<br/><br/><b>Example:</b><br/>5</td><td>None</td><td class='yes'>Yes</tr>
+					<tr class='info'><td>page_orientation</td><td>Page orientation for standard sizes. Required only if page_size is not custom.<br/><br/><b>Accepts:</b><br/>Choose from: portrait, landscape<br/><br/><b>Example:</b><br/>landscape</td><td>None</td><td class='No'>No</tr>
+					<tr class='info'><td>custom_height</td><td>Document page height in PDF units (72 PDF units = 1 inch). Required only if page_size is custom.<br/><br/><b>Accepts:</b><br/>Any positive number<br/><br/><b>Example:</b><br/>792</td><td>None</td><td class='No'>No</tr>
+					<tr class='info'><td>custom_width</td><td>Document page width in PDF units (72 PDF units = 1 inch). Required only if page_size is custom.<br/><br/><b>Accepts:</b><br/>Any positive number<br/><br/><b>Example:</b><br/>612</td><td>None</td><td class='No'>No</tr>
+					<tr class='info'><td>output</td><td>Output name of the new file, without extension.<br/><br/><b>Accepts:</b><br/>Any valid file name<br/><br/><b>Example:</b><br/>new_custom_document</td><td>pdfrest_blank-pdf</td><td class='No'>No</tr>
+				</table><br/><br/>	<span class='summary'>Responses</span><br/>
+				<table width=100% border=1 cellpadding=10 cellspacing=0 ><tr class='table-title'><td width=15%>Response Status Code</td><td width=25%>Description</td><td width=60%>JSON Response Example</td></tr>
+					<tr class='info'><td>200</td><td>OK</td><td><pre>{
+   "outputUrl": "https://api.pdfrest.com/resource/2e7de20c3-0dcd-4bed-b446-3c9c0d3f8c8c?format=file"<br/>
+   "outputId": "2e7de20c3-0dcd-4bed-b446-3c9c0d3f8c8c"<br/>}</pre></td></tr>
+					<tr class='info'><td>400</td><td>Bad Request</td><td><pre>{
+   "error": "Missing custom_height and/or custom_width for custom page size."<br/>}</pre></td></tr>
 					<tr class='info'><td>401</td><td>Unauthorized</td><td><pre>{
    "error": "The provided key is not valid."<br/>}</pre></td></tr>
 				</table><br/></div><br/><br/>
@@ -1416,7 +1456,7 @@
 </div> <div id="pdf-with-added-text-cURL" class="pdf-with-added-text-tabcontent">
   <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FcURL%2FEndpoint%20Examples%2FMultipart%20Payload%2Fpdf-with-added-text.sh&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 </div> <div id="pdf-with-added-text-JavaScript" class="pdf-with-added-text-tabcontent">
-  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJavaScript%2FEndpoint%20Examples%2FMultipart%20Payload%2Fpdf-with-added-text.js&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script> 
+  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FJavaScript%2FEndpoint%20Examples%2FMultipart%20Payload%2Fpdf-with-added-text.js&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 </div> <div id="pdf-with-added-text-Python" class="pdf-with-added-text-tabcontent">
   <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fdatalogics%2Fpdf-rest-api-samples%2Fblob%2Fmain%2FPython%2FEndpoint%20Examples%2FMultipart%20Payload%2Fpdf-with-added-text.py&style=github-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 </div> <div id="pdf-with-added-text-PHP" class="pdf-with-added-text-tabcontent">
@@ -1432,44 +1472,44 @@
 					<tr class='info'><td>id</td><td>Alphanumeric ID (UUID) of existing PDF file on server for text to be added.<br/><br/><b>Accepts:</b><br/>Any valid resource ID returned by a POST request<br/><br/><b>Example:</b><br/>0950b9bdf-0465-4d3f-8ea3-d2894f1ae839</td><td>None</td><td class='partial'>One of:<ul><li>file</li><li>id</li></ul></tr>
 					<tr class='info'><td>text_objects</td><td><p>JSON-formatted string consisting of an array of one or more objects containing options to add and format text.</p>
 <br/><br/><b>Accepts:</b><br/><ul>
-    <li><b>font</b> - String | Required | Specify the font of the given string. See <a href='https://pdfrest.com/documentation/fontlist/'>Font List</a> for a complete list.</li>
-    <li><b>max_width</b> - String | Required | The maximum width of the text column in PDF Units (72 PDF Units = 1 inch). The text will wrap to conform to this width.</li>
-    <li><b>opacity</b> - String | Required | Text opacity (0.0 - 1.0)</li>
-    <li><b>page</b> - String | Required | Page number on which to add text. You can provide a page number, or you can use "all" to add the text to every page at the same X/Y position.</li>
-    <li><b>rotation</b> - String | Required | Rotation in degrees of the text block</li>
-    <li><b>text</b> - String | Required | String of text to add</li>
-    <li><b>text_color_cmyk</b> or <b>text_color_rgb</b> - String | Required | Comma-delineated string of color values (RGB example - "53,5,102", CMYK example - "0,100,100,0"). Use one of these to set the text color.</li>
-    <li><b>text_size</b> - String | Required | Font size of the text (5 - 100)</li>
-    <li><b>x</b> - String | Required | Horizontal starting position of the text in PDF Units (72 PDF Units = 1 inch)</li>
-    <li><b>y</b> - String | Required | Vertical starting position of the text in PDF Units (72 PDF Units = 1 inch)</li>
-    <li><b>is_rtl</b> - String | Optional | Set to "true" to insert right-to-left (RTL) language text</li>
-</ul> 
+  <li><b>font</b> - String | Required | Specify the font of the given string. See <a href='https://pdfrest.com/documentation/fontlist/'>Font List</a> for a complete list.</li>
+  <li><b>max_width</b> - String | Required | The maximum width of the text column in PDF Units (72 PDF Units = 1 inch). The text will wrap to conform to this width.</li>
+  <li><b>opacity</b> - String | Required | Text opacity (0.0 - 1.0)</li>
+  <li><b>page</b> - String | Required | Page number on which to add text. You can provide a page number, or you can use "all" to add the text to every page at the same X/Y position.</li>
+  <li><b>rotation</b> - String | Required | Rotation in degrees of the text block</li>
+  <li><b>text</b> - String | Required | String of text to add</li>
+  <li><b>text_color_cmyk</b> or <b>text_color_rgb</b> - String | Required | Comma-delineated string of color values (RGB example - "53,5,102", CMYK example - "0,100,100,0"). Use one of these to set the text color.</li>
+  <li><b>text_size</b> - String | Required | Font size of the text (5 - 100)</li>
+  <li><b>x</b> - String | Required | Horizontal starting position of the text in PDF Units (72 PDF Units = 1 inch)</li>
+  <li><b>y</b> - String | Required | Vertical starting position of the text in PDF Units (72 PDF Units = 1 inch)</li>
+  <li><b>is_rtl</b> - String | Optional | Set to "true" to insert right-to-left (RTL) language text</li>
+</ul>
 <br/><br/><b>Example:</b><br/><pre> [
-   {
-      "font":"Arial",
-      "max_width":"100",
-      "opacity":"1",
-      "page":"all",
-      "rotation":"80",
-      "text":"Hello, PDF world!",
-      "text_color_rgb":"0,0,0",
-      "text_size":"12",
-      "x":"144",
-      "y":"144"
-   },
-   {
-      "font":"Times New Roman",
-      "max_width":"100",
-      "opacity":"1",
-      "page":"all",
-      "rotation":"0",
-      "text":"שלום עולם",
-      "text_color_rgb":"128,0,2",
-      "text_size":"72",
-      "x":"144",
-      "y":"720",
-      "is_rtl":"true"
-   }
+  {
+     "font":"Arial",
+     "max_width":"100",
+     "opacity":"1",
+     "page":"all",
+     "rotation":"80",
+     "text":"Hello, PDF world!",
+     "text_color_rgb":"0,0,0",
+     "text_size":"12",
+     "x":"144",
+     "y":"144"
+  },
+  {
+     "font":"Times New Roman",
+     "max_width":"100",
+     "opacity":"1",
+     "page":"all",
+     "rotation":"0",
+     "text":"שלום עולם",
+     "text_color_rgb":"128,0,2",
+     "text_size":"72",
+     "x":"144",
+     "y":"720",
+     "is_rtl":"true"
+  }
 ] </pre>
 </td><td>None</td><td class='yes'>Yes</tr>
 					<tr class='info'><td>output</td><td>Name of the generated output file, without extension.<br/><br/><b>Accepts:</b><br/>Any valid file name<br/><br/><b>Example:</b><br/>example_out</td><td>[INPUT_FILE_NAME]_pdfrest_pdf-with-added-text</td><td class='No'>No</tr>
